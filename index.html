@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "EN-US">
+    <head>
+        <title>Bananamass | Home</title>
+        <link rel="shortcut icon" href="banana.png"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>      
+        <script type="text/javascript" src="scripts.js"></script>  
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-light">
+                <a href="index.html" id="bananalogo" class="navbar-brand">Bananamass.com</a>
+            </nav>
+        </header>
+        <form>
+            <div class="container my-container">                  <!-- Container -->
+                <div class="row justify-content-around my-row">   <!-- Row 1 -->
+                    <div class="col-lg-5 my-col" align="center">  <!-- Col 1/Box 1 -->
+                        <h3 class="coltitle">Measurements:</h3>    
+                        <!-- Sex -->
+                        <hr>
+                        <div class="dropdown">
+                            <label for="sex" class="sectiontitle sex">Sex:</label><br>
+                            <select id="male-female" onclick="sexAlert()" class="selectpicker btn btn-outline-secondary">                                
+                                <option value="1" id="sexmale">Male</option>
+                                <option value="2" id="sexfemale">Female</option>
+                            </select>
+                        </div><br>
+                        <!-- Height -->
+                        <hr>
+                        <label for="height" class="sectiontitle">Height:</label><br>
+                        <div class="btn-group">
+                            <!--feet-->
+                            <div class="dropdown">                                    
+                                <select class="selectpicker btn btn-outline-secondary" id="htfeet">
+                                    <option value="" selected disabled>Feet</option>
+                                    <option id="feet4">4</option>
+                                    <option id="feet5">5</option>
+                                    <option id="feet6">6</option>
+                                </select>
+                            </div>
+                            <!--inches-->
+                            <div class="dropdown">                     
+                                <select class="selectpicker btn btn-outline-secondary">
+                                    <option value="" selected disabled>Inches</option>
+                                    <option id="inches0">0</option>
+                                    <option id="inches1">1</option>
+                                    <option id="inches2">2</option>
+                                    <option id="inches3">3</option>
+                                    <option id="inches4">4</option>
+                                    <option id="inches5">5</option>
+                                    <option id="inches6">6</option>
+                                    <option id="inches7">7</option>
+                                    <option id="inches8">8</option>
+                                    <option id="inches9">9</option>
+                                    <option id="inches10">10</option>
+                                    <option id="inches11">11</option>
+                                </select>                     
+                            </div>
+                        </div><br><br>
+                            <!--Weight -->
+                        <hr>
+                        <label for="weight" class="sectiontitle">Weight:</label><br>
+                        <div class="input-group" id="weightdropdown">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown selectpicker">
+                            <div class=" dropdown input-group-append">
+                                <select class="selectpicker btn btn-outline-secondary">
+                                    <option id="weightlbs">lbs</option>
+                                    <option id="weightkg">kg</option>
+                                </select>                                
+                            </div>
+                        </div><br>
+                        <hr><br><br>
+                        <button type="submit" id="submitbtn" onClick="writeValues(form)" class="btn btn-outline-secondary mb-2">Submit</button>
+                    </div>
+
+                    <div class="col-lg-5 my-col">
+                        <h3 class="coltitle">Results:</h3>
+                        <img class="img-responsive" id="human" src="human.png" width="150px">
+                        <img class="img-responsive" id="nana" src="" width="170px">
+                        <hr>
+                        <h3 class="coltitle" id="summary">Summary:</h3>
+                        <fieldset>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            </p>                                 
+                        </fieldset>
+                    </div>
+
+                </div>            
+            </div>
+        </form>
+        <script type="text/javascript" src="scripts.js"></script>  
+    </body>
+</html>
